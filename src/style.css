@@ -77,14 +77,162 @@ header {
   font-weight: 500;
 }
 
-.navbar .active {
+.navbar-list li a:hover{
   color: var(--text-white);
+  font-size: 14px;
   font-weight: 700;
 }
+
+
 
 .burguer-menu {
   visibility: hidden;
 }
+
+/* ================== Carrito ==================== */
+
+#cart-toggle {
+  display: none;
+}
+
+.nav-cart:hover{
+  cursor: pointer;
+  height: 22px;
+  width: 19x;
+}
+
+
+.carrito {
+  background: linear-gradient(to top, var(--to-gradient), var(--background));
+  padding: 40px;
+  position: absolute;
+  border: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  right: 0;
+  top: 65px;
+  height: calc(100vh - 65px);
+}
+
+.carrito h2 {
+  color: var(--text-white);
+}
+
+.cart-item {
+  background-color: #534e4a7a;
+  padding: 10px 15px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border: 2px solid var(--electric);
+  border-radius: 1rem;
+}
+
+.cart-item img {
+  aspect-ratio: 1/1;
+  height: 60px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-info h3 {
+  color: var(--text-white);
+  font-size: 16px;
+}
+
+.item-info p {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.item-info span {
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--lightblue), var(--pink));
+  background-clip: text;
+  color: transparent;
+}
+
+.add-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add {
+  padding: 0 9px;
+  color: var(--text-white);
+  font-size: 20px;
+  border: solid 1px var(--electric);
+  border-radius: 3px;
+}
+
+.delete {
+  padding: 0 9px;
+  color: var(--text-white);
+  font-size: 20px;
+  border: solid 1px var(--electric);
+  border-radius: 3px;
+  background-color: #534e4a7a;
+}
+
+.num {
+  font-size: 20px;
+  color: var(--text-gray);
+}
+
+.carrito hr {
+  width: 100%;
+  border: none; /* Elimina cualquier borde preestablecido */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: var(--electric); /* Color de la línea */
+  margin: 20px 0; /* Espacio alrededor de la línea */
+}
+
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+#cart-toggle:checked + .carrito {
+  display: flex;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total h5 {
+  color: var(--text-white);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.total span {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.comprar-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--text-white);
+  width: 90%;
+  padding: 8px 30px;
+}
+
 
 /*================= MAIN ====================*/
 
@@ -146,6 +294,12 @@ main {
   border: none;
   cursor: pointer;
   font-size: 700;
+}
+
+.hero-info button:hover {
+  background-color: var(--secondary);
+  border: solid var(--primary) 2px;
+  color: var(--primary);
 }
 
 .hero-card {

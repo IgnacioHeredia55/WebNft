@@ -9,7 +9,7 @@
       sizes="32x32"
       href="./assets/img/favicons/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>WebNft</title>
   </head>
   <body>
@@ -26,8 +26,7 @@
         <ul class="navbar-list">
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#discover">Descubre</a></li>
-          <li><a href="#">BTC</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li><a href="#hotNFTs">NFTs</a></li>
           <li><a href="#footer">Contacto</a></li>
         </ul>
         
@@ -37,29 +36,32 @@
         </label>
         <input type="checkbox" id="cart-toggle" />
         
-        <!--Elemento item de carrito-->        
-        <div class="cart-item">
-          <img src="./assets/img/cart/cart-img.png" alt="item-img" />
-          <div class="item-info">
-            <h3>Item</h3>
-            <p>Current bid</p>
-            <span>4.9eTH</span>
-          </div>
-          <div class="add-item">
-            <span class="delete">-</span>
-            <span class="num">1</span>
-            <span class="add">+</span>
-          </div>
-        </div>
-        <hr class="divisor" />
+          <div class="carrito">
+            <h2>Tus NFTs</h2>
+            <!--Elemento item de carrito-->        
+            <div class="cart-item">
+              <img src="./assets/img/cart/cart-img.png" alt="item-img" />
+              <div class="item-info">
+                <h3>Item</h3>
+                <p>Current bid</p>
+                <span>4.9eTH</span>
+              </div>
+              <div class="add-item">
+                <span class="delete">-</span>
+                <span class="num">1</span>
+                <span class="add">+</span>
+              </div>
+            </div>
+            <hr class="divisor" />
 
-        <div class="total">
-          <h5>Total:</h5>
-          <span>18.9 eTH</span>
-        </div>
+            <div class="total">
+              <h5>Total:</h5>
+              <span>18.9 eTH</span>
+            </div>
 
-        <!--Boton de compra-->
-        <button class="comprar-btn">Comprar</button>
+            <!--Boton de compra-->
+            <button class="comprar-btn">Comprar</button>
+          </div>  
       </nav>
     </header>
 
