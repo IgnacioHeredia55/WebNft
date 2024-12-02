@@ -205,20 +205,20 @@ header {
   display: flex;
 }
 
-.total {
+.total-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.total h5 {
+.total-container h5 {
   color: var(--text-white);
   font-size: 18px;
   font-weight: 700;
 }
 
-.total span {
+.total-container span {
   color: var(--text-white);
   font-size: 20px;
   font-weight: 200;
@@ -478,4 +478,228 @@ main {
 .container-pjs img {
   aspect-ratio: 1 / 1;
   width: 32%;
+}
+
+/*=========== DISCOVER =============*/
+
+#discover {
+  background-color: var(--background);
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0 4rem;
+}
+
+.discover-info {
+  display: flex;
+}
+
+.discover-info h2 {
+  font-size: 30px;
+  width: 600px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+.desc p {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.desc a {
+  color: var(--text-white);
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.desc a:hover{
+  color: var(--electric);
+}
+
+.container-pjs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.container-pjs img {
+  aspect-ratio: 1 / 1;
+  width: 32%;
+}
+
+/*=================== NFTs ====================*/
+
+#hotNFTs {
+  background-color: var(--background);
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+#hotNFTs h2 {
+  font-size: 35px;
+}
+
+#hotNFTs ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btns {
+  background-color: var(--btn-bg);
+  color: var(--text-white);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.active-btns {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.hotcards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hotcard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+}
+
+.card-group2{
+  display: none;
+}
+
+.card-top {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-top h5 {
+  font-size: 16px;
+}
+
+.card-top span {
+  color: var(--text-gray);
+}
+
+.card-mid {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-mid .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-mid p {
+  color: var(--text-gray);
+}
+
+.card-mid span {
+  font-weight: 800;
+}
+
+.card-bot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.card-bot .hothour {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hothour p {
+  font-weight: 700;
+}
+
+.card-bot button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+#hotNFTs .SeeMore { /*boton "ver mas"*/
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--text-white);
+  border: 0.5px solid var(--electric);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#hotNFTs .SeeMore:hover {
+  background-color: #7c7e8557;
+  color: var(--electric);
+}
+
+/* ================== FOOTER ==================== */
+
+footer {
+  background-color: var(--background);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.politicas {
+  display: flex;
+  gap: 2rem;
+}
+.politicas li {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+footer p {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+footer span {
+  color: var(--text-white);
+  font-weight: 700;
 }
