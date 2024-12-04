@@ -9,7 +9,8 @@
       sizes="32x32"
       href="./assets/img/favicons/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/mediaqueryes.css">
     <title>WebNft</title>
   </head>
   <body>
@@ -17,11 +18,16 @@
     <header>
       <!--Logo-->
       <a href="#" class="logo">
-        <img src="./assets/img/logo.png" alt="Logo" />
+        <img src="./assets/img/header/logo.png" alt="Logo" />
       </a>
       
       <nav class="navbar">
         
+        <!--MenuMobile-->
+        <div class="menu-label">
+          <img src="./assets/img/header/menu.png" alt="" class="menu-icon" />
+        </div>
+
         <!--MenuDesktop-->
         <ul class="navbar-list">
           <li><a href="#hero" class="active">Home</a></li>
@@ -29,30 +35,39 @@
           <li><a href="#hotNFTs">NFTs</a></li>
           <li><a href="#footer">Contacto</a></li>
         </ul>
+
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>
+        </div>
         
         <!--Carrito-->
         <label for="cart-toggle">
-          <img src="./assets/img/cart-icon.svg" alt="cart" class="nav-cart" />
+          <img src="./assets/img/header/cart-icon.svg" alt="cart" class="nav-cart" />
         </label>
         <input type="checkbox" id="cart-toggle" />
         
           <div class="carrito">
-            <h2>Tus NFTs</h2>
-            <!--Elemento item de carrito-->        
-            <div class="cart-item">
-              <img src="./assets/img/cart/cart-img.png" alt="item-img" class="item-img" />
-              <div class="item-info">
-                <h3>Item</h3>
-                <p>Current bid</p>
-                <span>4.9eTH</span>
-              </div>
-              <div class="add-item">
-                <span class="delete">-</span>
-                <span class="num">1</span>
-                <span class="add">+</span>
-              </div>
-            </div>
 
+            <h2>Tus NFTs</h2>
+            <div class="cart-container">  
+              <!--Elemento item de carrito-->        
+              <div class="cart-item">
+                <img src="./assets/img/cart/cart-img.png" alt="item-img" class="item-img" />
+                <div class="item-info">
+                  <h3>Item</h3>
+                  <p>Current bid</p>
+                  <span>4.9eTH</span>
+                </div>
+                <div class="add-item">
+                  <span class="delete">-</span>
+                  <span class="num">1</span>
+                  <span class="add">+</span>
+                </div>
+              </div>
+            </div>  
+            
             <hr class="divisor" />
 
             <div class="total-container">
@@ -107,6 +122,46 @@
         </div>
       </section>
 
+      <section id="info">
+        <h2>Crea, Aprende y comparte los NFTs</h2>
+
+        <div class="info-container">
+          <div class="info-card">
+            <img src="./assets/img/info/info-icon.png" alt="" />
+
+            <h4>Configura tu Wallet</h4>
+
+            <p>
+              Una vez que haya configurado la billetera de su eleccion,
+              conéctela a OpenSea
+            </p>
+          </div>
+
+          <div class="info-card">
+            <img src="./assets/img/info/info-icon.png" alt="" />
+
+            <h4>Agregá tus NFTs</h4>
+
+            <p>
+              Una vez que haya configurado la billetera de su elección, busca
+              los NFT de NUCBA y adquiere los que más te gusten.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <img src="./assets/img/info/info-icon.png" alt="" />
+
+            <h4>¡Coleccionalos!</h4>
+
+            <p>
+              A partir de ahora, formás parte de la comunidad de NUCBA NFT y vas
+              a poder acceder a contenidos educativos exclusivos sobre el mundo
+              crypto.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="discover">
         <div class="discover-info">
           <h2>Descubre una nueva era de colecciones</h2>
@@ -147,119 +202,119 @@
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="user-img" />
+                <img src="./assets/img/products/user.png" alt="user-img" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>9.50eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
             </div>
           </div>
           <div class="hotcard">
-            <img src="./assets/img/products/daovinci.png" alt="" />
+            <img src="./assets/img/products/cutemonkey.png" alt="" />
             <div class="card-top">
-              <h5>Golden Messi</h5>
+              <h5>Charles LeClerc</h5>
               <span>Current bid</span>
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="" />
+                <img src="./assets/img/products/user.png" alt="" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>4.99eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
             </div>
           </div>
           <div class="hotcard">
-            <img src="./assets/img/products/daovinci.png" alt="" />
+            <img src="./assets/img/products/cuteshiba.png" alt="" />
             <div class="card-top">
-              <h5>Golden Messi</h5>
+              <h5>Ayrton Senna</h5>
               <span>Current bid</span>
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="" />
+                <img src="./assets/img/products/user.png" alt="" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>5.33eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
             </div>
           </div>
           <div class="hotcard card-group2">
-            <img src="./assets/img/products/daovinci.png" alt="" />
+            <img src="./assets/img/products/fangster.png" alt="" />
             <div class="card-top">
-              <h5>Golden Messi</h5>
+              <h5>Diego Maradona</h5>
               <span>Current bid</span>
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="" />
+                <img src="./assets/img/products/user.png" alt="" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>8.25eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
             </div>
           </div>
           <div class="hotcard card-group2">
-            <img src="./assets/img/products/daovinci.png" alt="" />
+            <img src="./assets/img/products/sherbet.png" alt="" />
             <div class="card-top">
-              <h5>Golden Messi</h5>
+              <h5>Lionel Messi</h5>
               <span>Current bid</span>
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="" />
+                <img src="./assets/img/products/user.png" alt="" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>7.62eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
             </div>
           </div>
           <div class="hotcard card-group2">
-            <img src="./assets/img/products/daovinci.png" alt="" />
+            <img src="./assets/img/products/toretto.png" alt="" />
             <div class="card-top">
-              <h5>Golden Messi</h5>
+              <h5>Dominic Toretto</h5>
               <span>Current bid</span>
             </div>
             <div class="card-mid">
               <div class="user">
-                <img src="./assets/img/user.png" alt="" />
+                <img src="./assets/img/products/user.png" alt="" />
                 <p>@thetroncous</p>
               </div>
-              <span>6.89eTH</span>
+              <span>4.00eTH</span>
             </div>
             <div class="card-bot">
               <div class="hothour">
-                <img src="./assets/img/fire.png" alt="" />
+                <img src="./assets/img/products/fire.png" alt="" />
                 <p>05:12:07</p>
               </div>
               <button>Add</button>
@@ -281,6 +336,6 @@
       <p>Hecho con ❤️ por <span>IGNACIOHEREDIA</span></p>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

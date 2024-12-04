@@ -1,0 +1,137 @@
+@media (max-width: 768px){
+    
+    * {
+        max-width: 768px ;
+    }
+
+    #discover {
+        padding: 0;
+    }
+
+    .discover-info{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* .logo img{
+        display: none;
+    } */
+
+    .navbar .navbar-list  {
+        display: none;
+    }
+
+    .navbar{
+        gap: 1.5rem;
+    }
+
+    .cart-bubble{
+        top: 12px;
+        right: 6.5rem;
+        height: 15px;
+        width: 15px;
+    }
+
+    .nav-cart, .menu-label img{
+        width: 20px ;
+        height: 15px;
+    }
+
+
+    .nav-cart {
+        height: 22px;
+        width: 19x;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+      }
+    
+      .open-menu {
+        display: flex;
+      }
+
+}
+
+@media (max-width: 390px) {
+
+    * {
+        max-width: 390px;
+    }
+
+    .carrito{
+        height:calc(100vh - 63px);
+        top: 63px;
+    }
+
+    .main {
+        padding: 0px;
+        width: 390;
+    }
+
+    #hero {
+        max-width: 375px;
+    }
+
+    .hero-info{
+        width: 70%;
+    }
+
+    .hero-info button {
+        width: 50%;
+    }
+
+    .hero-card{
+        display: none;
+    }
+
+    .info-card {
+        gap: 1.5rem;
+        padding: 10px 15px ;
+    }
+
+    #discover{
+        padding: 0;
+    }
+
+    .discover-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .discover-info h2 {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .container-pjs{
+        flex-wrap: wrap;
+        width: 100vh;
+    }
+
+    #hotNFTs{
+        padding: 0;
+    }
+
+    #hotNFTs ul {
+        display: none;
+    }
+
+    .hotcards-container{
+        width: 90%;
+    }
+
+    .hotcard {
+        width: 90%;
+    }
+
+    .SeeMore {
+        padding: 0.5rem;
+    }
+
+}
+
