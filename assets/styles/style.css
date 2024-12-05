@@ -251,12 +251,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   color: var(--bg-white);
   padding: 2rem;
 }
 
 /*================= HERO ====================*/
+
 #hero {
   background-color: var(--background);
   margin-top: 4rem;
@@ -266,6 +267,7 @@ main {
   align-items: center;
   padding: 70px 0;
   gap: 3rem;
+  width: 100%;
 }
 
 /*================= hero-info ====================*/
@@ -296,7 +298,7 @@ main {
 
 .hero-info button {
   color: var(--text-white);
-  width: 30%;
+  width: 70%;
   height: 2.5rem;
   background-color: var(--primary);
   border-radius: 10px;
@@ -399,6 +401,7 @@ main {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
+  width: 100%;
 }
 
 #info h2 {
@@ -414,6 +417,7 @@ main {
   align-items: center;
   gap: 2rem;
   padding: 0px 70px;
+  width: 100%;
 }
 
 .info-card {
@@ -440,9 +444,11 @@ main {
 
 .info-card p {
   text-align: center;
-  font-size: 14px;
+  font-size: 90%;
   color: var(--text-gray);
 }
+
+/*========== DISCOVER =========*/
 
 #discover {
   background-color: var(--background);
@@ -453,15 +459,21 @@ main {
   justify-content: center;
   max-width: 1200px;
   padding: 0 4rem;
+  width: 100%;
 }
 
 .discover-info {
-  display: flex;
+  justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .discover-info h2 {
   font-size: 30px;
-  width: 600px;
+  width: 70%;
 }
 
 .desc {
@@ -503,6 +515,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  width: 100%;
   max-width: 1200px;
   padding: 0 4rem;
 }
@@ -542,7 +555,7 @@ main {
 
 .container-pjs {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
@@ -572,7 +585,9 @@ main {
 
 #hotNFTs ul {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .btns {
@@ -632,6 +647,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .card-mid .user {
   display: flex;
@@ -691,7 +707,7 @@ main {
 
 footer {
   background-color: var(--background);
-  width: 100vw;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;

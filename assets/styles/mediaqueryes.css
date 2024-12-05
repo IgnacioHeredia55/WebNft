@@ -9,8 +9,7 @@
     }
 
     .discover-info{
-        flex-direction: column;
-        gap: 1rem;
+        flex-wrap: wrap; 
     }
 
     /* .logo img{
@@ -52,6 +51,52 @@
         display: flex;
       }
 
+      .hotcard{
+        width: 80%;
+      }
+
+}
+
+@media (max-width: 576px) {
+
+    * {
+        max-width: 576px;    
+    }
+
+    .container-pjs{
+        flex-wrap: wrap;
+    }
+
+    #hotNFTs ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-card{
+        display: none;
+    }
+
+    .hero-info{
+        width: 70%;
+    }
+
+    #hero button {
+        width: 70%;
+    }
+
+    .hotcard{
+        width: 60%;
+    }
+
+    .user p {
+        font-size: 14px;
+    }
+
+    .card-mid span {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 390px) {
@@ -67,7 +112,7 @@
 
     .main {
         padding: 0px;
-        width: 390;
+        width: 100%;
     }
 
     #hero {
@@ -91,6 +136,10 @@
         padding: 10px 15px ;
     }
 
+    .info-card p {
+        font-size: 70%;
+    }
+
     #discover{
         padding: 0;
     }
@@ -110,7 +159,7 @@
 
     .container-pjs{
         flex-wrap: wrap;
-        width: 100vh;
+        width: 100%;
     }
 
     #hotNFTs{
