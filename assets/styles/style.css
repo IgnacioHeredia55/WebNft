@@ -90,6 +90,10 @@ header {
   display: none;
 }
 
+.nav-cart{
+  cursor: pointer;
+}
+
 .carrito {
   background: linear-gradient(to top, var(--to-gradient), var(--background));
   padding: 40px;
@@ -735,4 +739,8 @@ footer p {
 footer span {
   color: var(--text-white);
   font-weight: 700;
+}
+
+.hidden{
+  visibility: hidden;
 }
